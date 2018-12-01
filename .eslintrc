@@ -10,7 +10,8 @@
     "standard"
   ],
   "parserOptions": {
-    "ecmaVersion": 2017
+    "ecmaVersion": 2017,
+    "parser": "babel-eslint"
   },
   "env": {
     "node": true,
