@@ -6,8 +6,9 @@
   "scripts": {
     "lint": "eslint src --color",
     "build": "babel src --out-dir dist --ignore node_modules",
-    "p": "prettier --write 'src/**/*.js'",
-    "p:w": "onchange 'src/**/*.js' -- prettier --write {{changed}}",
+    "pjs": "prettier --write 'src/**/*.js'",
+    "pjs:w": "onchange 'src/**/*.js' -- prettier --write {{changed}}",
+    "pcss": "prettier-stylelint --write --quiet '**/*.{css,scss,less,sss}'",
     "test": "jest"
   },
   "devDependencies": {
@@ -27,6 +28,10 @@
     "jest": "^23.6.0",
     "onchange": "^5.1.3",
     "prettier": "^1.15.3",
-    "standard": "^12.0.1"
+    "prettier-stylelint": "^0.4.2",
+    "standard": "^12.0.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^2.0.0"
   }
 }
